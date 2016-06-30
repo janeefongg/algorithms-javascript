@@ -1,0 +1,3 @@
+/*
+A binary tree where the left child is lesser than the parent and the right child is greater than the parent
+ */
