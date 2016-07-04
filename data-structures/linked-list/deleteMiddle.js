@@ -1,1 +1,0 @@
-// implement an algorithm that deletes a node in the middle of array, given only access to that node
