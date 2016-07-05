@@ -76,3 +76,17 @@ BinarySearchTree.prototype.isBalanced = function (root) {
 
   return this.maxHeight(root) - this.minHeight(root) <= 1;
 };
+
+BinarySearchTree.prototype.isValid = function (root, min, max) {
+  if (root.value === null) {
+    return true;
+  }
+  
+  if (root.value > min && root.value < max
+      && this.isValid(root.left, min, root.value)
+      && this.isValid(root.right, root.value, max)) {
+    return true;
+  } else {
+    return false;
+  }
+};
