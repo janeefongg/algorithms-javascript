@@ -52,3 +52,27 @@ BinarySearchTree.prototype.depthFirstLog = function (callback) {
         this.right.depthFirstLog(callback);
     }
 };
+
+BinarySearchTree.prototype.minHeight = function (node) {
+  if (!node || !node.value) {
+    return 0;
+  }
+
+  return 1 + Math.min(this.minHeight(node.left), this.minHeight(node.right));
+};
+
+BinarySearchTree.prototype.maxHeight = function (node) {
+  if (!node || node.value) {
+    return 0;
+  }
+
+  return 1 + Math.max(this.maxHeight(node.left), this.maxHeight(node.right));
+};
+
+BinarySearchTree.prototype.isBalanced = function (root) {
+  if (!root || !root.value) {
+    return true;
+  }
+
+  return this.maxHeight(root) - this.minHeight(root) <= 1;
+};
