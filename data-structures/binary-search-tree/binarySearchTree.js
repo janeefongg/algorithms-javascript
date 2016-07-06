@@ -2,6 +2,17 @@
 A binary tree where the left child is lesser than the parent and the right child is greater than the parent
  */
 
+/*
+Methods:
+-Insert
+-Contains
+-DepthFirstLog
+-minHeight
+-maxHeight
+-isBalanced
+-isValid
+ */
+
 var BinarySearchTree = function (value) {
     this.value = value;
     this.left = null;
