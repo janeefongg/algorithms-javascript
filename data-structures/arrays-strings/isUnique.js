@@ -17,6 +17,7 @@ Psuedocode (without additional data structures):
 
 //with additional data structure
 //time complexity: o(n^2) because of for loop and indexof
+
 function isUnique (string) {
   var strArr = [];
 
