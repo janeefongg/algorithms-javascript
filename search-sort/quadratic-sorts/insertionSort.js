@@ -5,7 +5,7 @@ current compared value, this value is shifted to the right, creating an open slo
 the temp will be inserted into the open slot.
  */
 
-function insertionSort (array) {
+module.exports.insertionSort = function (array) {
   var temp;
   var counter;
 
@@ -21,8 +21,6 @@ function insertionSort (array) {
 
   return array;
 }
-
-insertionSort([4, 2, 9, 10, 2, 6, 1, 3, 0]);
 
 /*
 Time Complexity: Quadratic

@@ -3,7 +3,7 @@ Bubble sort does a swap at each iteration for where the current largest item is 
 The largest number eventually 'bubbles' its way to the end of the array.
  */
 
-function bubbleSort (array) {
+module.exports.bubbleSort = function (array) {
   for (var i = 0; i < array.length - 1; i++) {
     for (var j = 0; j < array.length - 1 - i; j++) {
       if (array[j] > array[j + 1]) {
@@ -14,9 +14,7 @@ function bubbleSort (array) {
     }
   }
   return array;
-}
-
-bubbleSort([8, 7, 10, 1, 2, 5, 11, 3]);
+};
 
 /*
 Time Complexity: Quadratic
