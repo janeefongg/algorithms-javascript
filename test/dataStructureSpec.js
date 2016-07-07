@@ -12,8 +12,8 @@ describe('Arrays and Strings', function(){
 
   it('should remove duplicates from an input string', function(){
 
-    expect(isUnique('banana', 'ban')).to.equal('ban');
-    expect(isUnique2('banana', 'ban')).to.equal('ban');
+    expect(isUnique('banana')).to.equal('ban');
+    expect(isUnique2('banana')).to.equal('ban');
   });
 
 });
