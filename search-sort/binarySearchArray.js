@@ -1,7 +1,7 @@
 //implement an algorithm that searches through a sorted array for a target
 //if target found, return index. else return -1
 
-function binarySearchArray (array, target) {
+module.exports.binarySearchArray = function (array, target) {
     var min = 0;
     var max = array.length - 1;
     var mid;
@@ -18,4 +18,4 @@ function binarySearchArray (array, target) {
     }
 
     return -1;
-}
+};

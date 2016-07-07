@@ -3,7 +3,7 @@ Selection sort iterates over an array and finds the smallest item of the collect
 The smallest value then gets swapped with the current iterated item in the original loop.
  */
 
-function selectionSort (array) {
+module.exports.selectionSort = function (array) {
   var temp;
   var position;
   
@@ -20,10 +20,7 @@ function selectionSort (array) {
   }
 
   return array;
-}
-
-
-selectionSort([4, 2, 9, 10, 2, 6, 1, 3, 0]);
+};
 
 /*
 Time Complexity: Quadratic
