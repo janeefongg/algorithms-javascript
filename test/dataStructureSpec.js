@@ -3,6 +3,7 @@ var expect = require('expect.js');
 var checkPermutation = require('../data-structures/arrays-strings/checkPermutation').checkPermutation;
 var isUnique = require('../data-structures/arrays-strings/isUnique').isUnique;
 var isUnique2 = require('../data-structures/arrays-strings/isUnique').isUnique2;
+var urlify = require('../data-structures/arrays-strings/urlify').urlify;
 
 describe('Arrays and Strings', function(){
   it('should check if a string is a permutation of the other', function(){
@@ -15,5 +16,10 @@ describe('Arrays and Strings', function(){
     expect(isUnique('banana')).to.equal('ban');
     expect(isUnique2('banana')).to.equal('ban');
   });
+  
+  it('should fill the empty spaces in an input string with %20', function () {
+    expect(urlify('Mr John Smith   ', 13)).to.be('Mr%20John%20Smith');
+    expect(urlify('Hello, Jane!', 12)).to.be('Hello,%20Jane!');
+  })
 
 });
