@@ -23,7 +23,7 @@ module.exports.stringCompression = function (input) {
     }
   }
 
-  results.push(starter+counter);
+  results.push(starter + counter);
   return results.join('');
 };
 
