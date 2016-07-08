@@ -10,6 +10,7 @@ A compilation of my notes and code on how to tackle certain toy problems. (from 
 
 - Reorganize files
 - Set up testing for each algorithm
+- Add time complexity analysis to each algorithm
 
 
 **Work in progress!**
