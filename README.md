@@ -14,7 +14,7 @@ A compilation of my notes and code on how to tackle certain toy problems. (from 
 
 **Work in progress!**
 
-**Algorithm Completion Tracker:**
+##Algorithm Completion Tracker:##
 
 Arrays and Strings
 
@@ -32,11 +32,14 @@ Arrays and Strings
 
 
 Linked Lists
+
 _To be completed.._
 
 Stacks and Queues
+
 _To be completed.._
 
 Trees and Graphs
+
 _To be completed.._
 
