@@ -7,6 +7,7 @@ var urlify = require('../data-structures/arrays-strings/urlify');
 var oneAway = require('../data-structures/arrays-strings/oneAway');
 var stringCompression = require('../data-structures/arrays-strings/stringCompression');
 var stringRotation = require('../data-structures/arrays-strings/stringRotation');
+var zeroMatrix = require('../data-structures/arrays-strings/zeroMatrix');
 
 describe('Arrays and Strings', function(){
   it('should check if a string is a permutation of the other', function(){
@@ -38,6 +39,10 @@ describe('Arrays and Strings', function(){
 
   it('should return a boolean depending on whether or not str1 is a rotation of str2', function () {
     expect(stringRotation('waterbottle', 'erbottlewat')).to.be(true);
+  });
+
+  it('should return a matrix where entire row and column are set to 0 at the index found', function () {
+    expect(zeroMatrix([[0, 1, 2, 3], [5, 6, 7, 8], [9, 11, 3, 4]])).to.eql([[0, 0, 0, 0], [0, 6, 7, 8], [0, 11, 3, 4]]);
   });
 
 });
