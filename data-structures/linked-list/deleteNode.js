@@ -8,14 +8,15 @@
 
 //example: c's value will become d. c's next will be d's next
 //Note: this problem cannot be solved if the node to be deleted is the last node in the linked list
+'use strict'
 
-function deleteNode (node) {
+module.exports = (node) => {
   
   if (!node.value || !node.next) {
     return false;
   }
   
-  var nextNode = node.next;
+  let nextNode = node.next;
   node.value = nextNode.value;
   node.next = nextNode.next;
   

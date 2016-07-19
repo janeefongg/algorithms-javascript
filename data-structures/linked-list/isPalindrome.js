@@ -2,8 +2,8 @@
 
 //reverse linkedlist and compare
 
-function isPalindrome (linkedlist) {
-  var reversedList = reversedClone(linkedlist);
+module.exports = (linkedlist) => {
+  let reversedList = reversedClone(linkedlist);
   
   while (linkedlist && reversedList) {
     if (linkedlist.value !== reversedList.value) {
@@ -19,11 +19,11 @@ function isPalindrome (linkedlist) {
 }
 
 //helper function
-function reverseClone (linkedlist) {
-  var prev = null;
-  var current = linkedlist;
-  var temp;
-  var newList = new LinkedList();
+let reverseClone = (linkedlist) => {
+  let prev = null;
+  let current = linkedlist;
+  let temp;
+  let newList = new LinkedList();
   
   while (current) {
     newList.addToTail(current.value);

@@ -7,11 +7,11 @@
 
 
 //method 2:
-function removeDups (linkedlist) {
-  var current = linkedlist;
+module.exports = (linkedlist) => {
+  let current = linkedlist;
   
   while (current) {
-    var pointer = current;
+    let pointer = current;
     while(pointer.next) {
       if (pointer.next.value === current.value) {
         pointer.next = pointer.next.next;

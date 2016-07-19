@@ -9,9 +9,9 @@
 //move slow pointer and fast pointer at rate of 1 step
 //return collision point
 
-function linkedListCollision (linkedlist) {
-  var slow = linkedlist;
-  var fast = linkedlist;
+module.exports = (linkedlist) => {
+  let slow = linkedlist;
+  let fast = linkedlist;
   
   while (fast && fast.next) {
     slow = slow.next;

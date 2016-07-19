@@ -1,11 +1,11 @@
 // implement an algorithm that finds the kth element to last element of a singly linked list
 
-function kthElement (linkedlist, k) {
-  var p1 = linkedlist;
-  var p2 = linkedlist;
+module.exports = (linkedlist, k) => {
+  let p1 = linkedlist;
+  let p2 = linkedlist;
   
   //iterate to figure out which kth node is
-  for (var i = 0; i < k; i++) {
+  for (let i = 0; i < k; i++) {
     if (p1.value === null) {
       return null;
     } 
