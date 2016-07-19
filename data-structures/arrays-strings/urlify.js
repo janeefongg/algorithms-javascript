@@ -11,9 +11,11 @@ Psuedocode:
 **Use string builder
  */
 
-module.exports.urlify = function (string, length) {
-  var lenCounter = 0;
-  var results = [];
+'use strict'
+
+module.exports = (string, length) => {
+  let lenCounter = 0;
+  let results = [];
 
   while (lenCounter < length) {
     if (string.charAt(lenCounter) === " ") {

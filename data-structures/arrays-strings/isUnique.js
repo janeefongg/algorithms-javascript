@@ -17,11 +17,12 @@ Psuedocode (without additional data structures):
 
 //with additional data structure
 //time complexity: o(n^2) because of for loop and indexof
+'use strict'
 
-module.exports.isUnique = function (string) {
-  var strArr = [];
+module.exports.isUnique = (string) => {
+  let strArr = [];
 
-  for (var i = 0; i < string.length; i++) {
+  for (let i = 0; i < string.length; i++) {
     if (strArr.indexOf(string.charAt(i)) < 0) {
       strArr.push(string.charAt(i));
     }
@@ -31,9 +32,9 @@ module.exports.isUnique = function (string) {
 
 //without additional data structure
 //time complexity: o(n^2) because of for loop with inner for loop
-module.exports.isUnique2 = function (string) {
-  for (var i = 0; i < string.length; i++) {
-    for (var j = i + 1; j < string.length; j++) {
+module.exports.isUnique2 = (string) => {
+  for (let i = 0; i < string.length; i++) {
+    for (let j = i + 1; j < string.length; j++) {
       if (string.charAt(i) === string.charAt(j)) {
         string = string.split('')
         string.splice(j, 1)

@@ -11,14 +11,16 @@ Iterate over the string and keep checking whether or not it exists in the second
 When it's no longer in the second string, check the remainder using isSubstring.
  */
 
-module.exports.stringRotation = function (str1, str2) {
-  var results = [];
+'use strict'
+
+module.exports = (str1, str2) => {
+  let results = [];
 
   if (str1.length !== str2.length) {
     return false;
   }
 
-  for (var i = 0; i < str1.length; i++) {
+  for (let i = 0; i < str1.length; i++) {
     if (results.length > 0) {
       if (str1.indexOf(results.join('')) > -1) {
         results.push(str2.charAt(i));
@@ -32,7 +34,7 @@ module.exports.stringRotation = function (str1, str2) {
   return false;
 }
 
-function isSubString (str1, str2) {
+let isSubString = (str1, str2) => {
   if (str2.indexOf(str1) > -1) {
     return true;
   }

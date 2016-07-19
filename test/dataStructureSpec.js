@@ -1,12 +1,12 @@
 var expect = require('expect.js');
 
-var checkPermutation = require('../data-structures/arrays-strings/checkPermutation').checkPermutation;
+var checkPermutation = require('../data-structures/arrays-strings/checkPermutation');
 var isUnique = require('../data-structures/arrays-strings/isUnique').isUnique;
 var isUnique2 = require('../data-structures/arrays-strings/isUnique').isUnique2;
-var urlify = require('../data-structures/arrays-strings/urlify').urlify;
-var oneAway = require('../data-structures/arrays-strings/oneAway').oneAway;
-var stringCompression = require('../data-structures/arrays-strings/stringCompression').stringCompression;
-var stringRotation = require('../data-structures/arrays-strings/stringRotation').stringRotation;
+var urlify = require('../data-structures/arrays-strings/urlify');
+var oneAway = require('../data-structures/arrays-strings/oneAway');
+var stringCompression = require('../data-structures/arrays-strings/stringCompression');
+var stringRotation = require('../data-structures/arrays-strings/stringRotation');
 
 describe('Arrays and Strings', function(){
   it('should check if a string is a permutation of the other', function(){

@@ -19,7 +19,9 @@ Given two strings, write a function to check if they are one edit (or zero edits
 //iterate through and count the differences
 //if difference count is greater than 1, return false
 
-module.exports.oneAway = function (input1, input2) {
+'use strict'
+
+module.exports = (input1, input2) => {
 
   if (input1.length === input2.length + 1) {
     //insertion

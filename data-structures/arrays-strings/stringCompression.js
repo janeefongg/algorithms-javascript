@@ -5,7 +5,9 @@ Input: 'aabcccccaaa'
 Output: 'a2b1c5a3'
  */
 
-module.exports.stringCompression = function (input) {
+'use strict'
+
+module.exports = input => {
   var results = [];
   var counter = 0;
   var starter;
